@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baca Rek</title>
+    <link rel="stylesheet" href="/css_reset.css" />
+    <link rel="stylesheet" href="/Kategori.css" />
+  </head>
+  <body>
+    <div id="overlay" onclick="hideOverlay()"></div>
+    <header>
+      <!-- Header Atas -->
+      <div class="header-top">
+        <div class="logo">
+          <img src="/assets/Logo and Text Black.png" alt="" />
+        </div>
+        <div class="profile" onclick="toggleProfileMenu()">
+          <img
+            src="/assets/Ellipse 5.png"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+        </div>
+      </div>
+      <!-- Header Atas android -->
+      <div class="header-top-smartphone">
+        <div class="logo">
+          <img src="/assets/Logo and Text Black.png" alt="" />
+        </div>
+        <div class="profile" onclick="toggleProfileMenu()">
+          <img src="/assets/Menu.png" alt="Profile Picture" class="" />
+        </div>
+      </div>
+
+      <!-- Menu Profile (Dekstop dan Mobile) -->
+      <div class="profile-menu">
+        <div class="profile-info">
+          <div class="menu-profile">
+            <img
+              src="/assets/Ellipse 5.png"
+              alt="Profile Picture"
+              class="profile-pic-large"
+            />
+            <img
+              src="/assets/Exit.png"
+              alt=""
+              class="exit-button"
+              onclick="toggleProfileMenu()"
+            />
+          </div>
+          <div class="profile-name">Galvin</div>
+          <div class="profile-role">Role: Writer</div>
+          <a href="/WritingSection.html"
+            ><button class="btn-write">Write</button></a
+          >
+          <input type="text" placeholder="Search" class="search-input" />
+        </div>
+
+        <div class="linebar"></div>
+        <nav class="navbar">
+          <a href="/Home.html">Home</a>
+          <a href="/National.html">National</a>
+          <a href="/International.html">International</a>
+          <a href="/Economy.html">Economy</a>
+          <a href="/Sports.html">Sports</a>
+          <a href="/Technology.html">Technology</a>
+          <a href="/Automotive.html">Automotive</a>
+          <a href="/Entertainment.html">Entertainment</a>
+        </nav>
+        <div class="profile-info">
+          <button class="btn-logout">Log Out</button>
+        </div>
+      </div>
+
+      <!-- Header Bawah Dekstop -->
+      <div class="header-bottom">
+        <nav class="navbar-desktop">
+          <a href="/Home.html">Home</a>
+          <a href="/National.html">National</a>
+          <a href="/International.html">International</a>
+          <a href="/Economy.html">Economy</a>
+          <a href="/Sports.html">Sports</a>
+          <a href="/Technology.html">Technology</a>
+          <a href="/Automotive.html">Automotive</a>
+          <a href="/Entertainment.html">Entertainment</a>
+        </nav>
+        <input type="text" placeholder="Search" class="searchbar-desktop" />
+      </div>
+    </header>
+
+    <main>
+      <a href="#">
+        <h1 class="title" id="title-theme">Movies</h1>
+      </a>
+      <a href="#">
+        <h1 class="title">Most Popular</h1>
+      </a>
+      <section class="setup-container">
+        <section id="main-container">
+          <div class="content">
+            <img src="/assets/UI UX Image Download (3) 1.png" alt="profile" />
+          </div>
+          <div>
+            <p id="tanggal">Wednesday, 6 September 2024</p>
+          </div>
+          <div>
+            <a href="#">
+              <h1>
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+          </div>
+          <div>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+
+        <section id="sidebar-container">
+          <section>
+            <h1 id="number-sidebar">2.</h1>
+            <div>
+              <a href="">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">3.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">4.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">5.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <a href="#">
+        <h1 class="title">Lastest News</h1>
+      </a>
+      <section id="bottombar-container">
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <main>
+      <a href="#">
+        <h1 class="title" id="title-theme">Music</h1>
+      </a>
+      <a href="#">
+        <h1 class="title">Most Popular</h1>
+      </a>
+      <section class="setup-container">
+        <section id="main-container">
+          <div class="content">
+            <img src="/assets/UI UX Image Download (3) 1.png" alt="profile" />
+          </div>
+          <div>
+            <p id="tanggal">Wednesday, 6 September 2024</p>
+          </div>
+          <div>
+            <a href="#">
+              <h1>
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+          </div>
+          <div>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+
+        <section id="sidebar-container">
+          <section>
+            <h1 id="number-sidebar">2.</h1>
+            <div>
+              <a href="">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">3.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">4.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">5.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <a href="#">
+        <h1 class="title">Lastest News</h1>
+      </a>
+      <section id="bottombar-container">
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <main>
+      <a href="#">
+        <h1 class="title" id="title-theme">Celebrity</h1>
+      </a>
+      <a href="#">
+        <h1 class="title">Most Popular</h1>
+      </a>
+      <section class="setup-container">
+        <section id="main-container">
+          <div class="content">
+            <img src="/assets/UI UX Image Download (3) 1.png" alt="profile" />
+          </div>
+          <div>
+            <p id="tanggal">Wednesday, 6 September 2024</p>
+          </div>
+          <div>
+            <a href="#">
+              <h1>
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+          </div>
+          <div>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+
+        <section id="sidebar-container">
+          <section>
+            <h1 id="number-sidebar">2.</h1>
+            <div>
+              <a href="">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">3.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">4.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">5.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <a href="#">
+        <h1 class="title">Lastest News</h1>
+      </a>
+      <section id="bottombar-container">
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <main>
+      <a href="#">
+        <h1 class="title" id="title-theme">Arts</h1>
+      </a>
+      <a href="#">
+        <h1 class="title">Most Popular</h1>
+      </a>
+      <section class="setup-container">
+        <section id="main-container">
+          <div class="content">
+            <img src="/assets/UI UX Image Download (3) 1.png" alt="profile" />
+          </div>
+          <div>
+            <p id="tanggal">Wednesday, 6 September 2024</p>
+          </div>
+          <div>
+            <a href="#">
+              <h1>
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+          </div>
+          <div>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+
+        <section id="sidebar-container">
+          <section>
+            <h1 id="number-sidebar">2.</h1>
+            <div>
+              <a href="">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">3.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">4.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h1 id="number-sidebar">5.</h1>
+            <div>
+              <a href="#">
+                <h1 id="subjudul-sidebar">
+                  Vegetables are some of the most precious things given to us
+                </h1>
+              </a>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <a href="#">
+        <h1 class="title">Lastest News</h1>
+      </a>
+      <section id="bottombar-container">
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="/assets/UI UX Image Download (3) 1.png" alt="" />
+          <div>
+            <a href="#">
+              <h1 id="subjudul">
+                Vegetables are some of the most precious things given to us
+              </h1>
+            </a>
+            <p>
+              Simple ways how to cook our veggies, absolutely into your liking
+              and delicacy, delicious, and wonderful in appearance!
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- -------------------------------------------------------------------- -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="connection-container">
+          <div class="logo-text">
+            <img src="assets/Logo and Text White.png" alt="Logo" />
+          </div>
+          <div>
+            <a href="">
+              <h1>Connect With Us</h1>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="assets/Frame 27.png" alt="instagram" />
+            </a>
+            <a href="#">
+              <img src="assets/Frame 28.png" alt="Facebook" />
+            </a>
+            <a href="#">
+              <img src="assets/Frame 29.png" alt="Twetter" />
+            </a>
+            <a href="#">
+              <img src="assets/Frame 30.png" alt="Youtube" />
+            </a>
+          </div>
+          <div>
+            <p>&copy; 2024 - All rights reserved</p>
+          </div>
+        </div>
+        <div class="information-container">
+          <div>
+            <h1>What is Baca Rek?</h1>
+          </div>
+          <div>
+            <p>
+              BacaRek is one of online websites which provides you a bunch of
+              information regarding what you need, containing national,
+              international, economy, sports, technology, automotive and
+              entertainment news, and obviously free. To fill the readers needs
+              in comfort, we don’t have any advertisement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/Script.js"></script>
+  </body>
+</html>

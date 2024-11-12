@@ -1,0 +1,314 @@
+:root {
+  --dark-blue: rgba(29, 40, 48, 1);
+  --blue: rgba(27, 158, 222, 1);
+  --gray: rgba(78, 90, 101, 1);
+  --font-primary: "Inter", sans-serif;
+  --font-size-larger: 30px;
+  --font-size-large: 20px;
+  --font-size-smaller: 17px;
+  --font-size-small: 15px;
+  --font-size-smallllerrrr: 12px;
+}
+p {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-small);
+}
+h1 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-large);
+}
+#subjudul {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-small);
+}
+#tanggal {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-smallllerrrr);
+}
+a {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-small);
+  text-decoration: none;
+}
+button, #button{
+  font-family: var(--font-primary);
+  font-size: var(--font-size-smallllerrrr);
+  font-weight: bold;
+  background-color: rgba(27, 158, 222, 1);
+  text-align: center;
+  color: white;
+  border: none;
+  margin-top: 5%;
+}
+label {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-smaller);
+}
+/* --------------------------------------------------- */
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 1%;
+}
+header img{
+  margin: 1%;
+}
+/* -------------------------------------------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.title-container {
+  width: 20%;
+  margin: 5% 0;
+  text-align: center;
+}
+.title-container h1{
+  margin-bottom:2% ;
+}
+.title-container .form-container{
+  margin-bottom: 1%;
+}
+.form-container{
+  width: 20%;
+}
+.form-container a, input, select, button{
+  border-radius: 5px;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 20%;
+}
+.form-container a, input, select, button{
+  border-radius: 5px;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 10%;
+}
+
+
+
+.form-container div{
+  margin-bottom: 5%;
+}
+.form-container a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ---------------------------------------------- */
+/* Styling untuk Footer */
+footer {
+  width: 100%;
+  padding: 5% 0;
+  background-color: var(--dark-blue);
+}
+
+footer h1,
+footer p {
+  color: white;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text img {
+  width: 40%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Agar elemen bisa berbaris ke bawah jika sempit */
+}
+
+.connection-container {
+  width: 30%;
+}
+
+.connection-container p {
+  font-size: var(--font-size-small);
+  text-align: center;
+}
+
+.connection-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.connection-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.connection-container h1 {
+  font-size: 120%;
+}
+
+.information-container {
+  width: 50%;
+}
+
+.information-container div {
+  margin-bottom: 2%;
+}
+
+.information-container h1 {
+  font-size: larger;
+}
+
+@media (max-width: 749px){
+  :root {
+    --dark-blue: rgba(29, 40, 48, 1);
+    --blue: rgba(27, 158, 222, 1);
+    --gray: rgba(78, 90, 101, 1);
+    --font-primary: "Inter", sans-serif;
+    --font-size-larger: 15px;
+    --font-size-large: 12px;
+    --font-size-small: 8px;
+    --font-size-smaller: 6px;
+    --font-size-smallllerrrr: 4px;
+  }
+  .title-container {
+    width: 40%;
+    margin: 5% 0;
+    text-align: center;
+  }
+  .form-container{
+    width: 40%;
+  }
+  .form-container a, input, select, button{
+    border-radius: 5px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 15%;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column-reverse ;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Agar elemen bisa berbaris ke bawah jika sempit */
+  }
+  .connection-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .connection-container {
+    width: 90%;
+  }
+  .information-container {
+    width: 90%;
+  }
+  .footer-container div{
+    margin-bottom: 2%;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 1%;
+    margin: 0% 5%;
+  }
+  header img{
+    width: 20%;
+    margin: 3%;
+  }
+}
+
+@media (min-width:750px) and (max-width: 1023px){
+  :root {
+    --dark-blue: rgba(29, 40, 48, 1);
+    --blue: rgba(27, 158, 222, 1);
+    --gray: rgba(78, 90, 101, 1);
+    --font-primary: "Inter", sans-serif;
+    --font-size-larger: 17px;
+    --font-size-large: 14px;
+    --font-size-small: 10px;
+    --font-size-smaller: 10px;
+    --font-size-smallllerrrr: 8px;
+  }
+  .title-container {
+    width: 20%;
+    margin: 5% 0;
+    text-align: center;
+  }
+  .form-container{
+    width: 20%;
+  }
+  .form-container a, input, select, button{
+    border-radius: 5px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 10%;
+  }
+}
+
+@media (min-width: 1500px){
+  :root {
+    --dark-blue: rgba(29, 40, 48, 1);
+    --blue: rgba(27, 158, 222, 1);
+    --gray: rgba(78, 90, 101, 1);
+    --font-primary: "Inter", sans-serif;
+    --font-size-larger: 25px;
+    --font-size-large: 22px;
+    --font-size-small: 20px;
+    --font-size-smaller: 17px;
+    --font-size-smallllerrrr: 15px;
+  }
+  .title-container {
+    width: 20%;
+    margin: 5% 0;
+    text-align: center;
+  }
+  .form-container{
+    width: 20%;
+  }
+  .form-container a, input, select, button{
+    border-radius: 5px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 10%;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --dark-blue: rgba(29, 40, 48, 1);
+    --blue: rgba(27, 158, 222, 1);
+    --gray: rgba(78, 90, 101, 1);
+    --font-primary: "Inter", sans-serif;
+    --font-size-larger: 30px;
+    --font-size-large: 27px;
+    --font-size-small: 22px;
+    --font-size-smaller: 20px;
+    --font-size-smallllerrrr: 15px;
+  }
+  .title-container {
+    width: 20%;
+    margin: 5% 0;
+    text-align: center;
+  }
+  .form-container{
+    width: 20%;
+  }
+  .form-container a, input, select, button{
+    border-radius: 5px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 10%;
+  }
+}
