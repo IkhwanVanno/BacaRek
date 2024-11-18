@@ -1,20 +1,68 @@
-function toggleProfileMenu() {
-  const profileMenu = document.querySelector('.profile-menu');
-  const overlay = document.getElementById('overlay');
-  
-  if (profileMenu.style.display === 'block') {
-      profileMenu.style.display = 'none';
-      overlay.style.display = 'none';
-  } else {
-      profileMenu.style.display = 'block';
-      overlay.style.display = 'block';
-  }
+// Ambil elemen-elemen yang diperlukan
+const menuToggle = document.querySelector('.menu-toggle');
+const sidebar = document.querySelector('.navigasi-sidebar-container');
+const overlay = document.getElementById('overlay');
+const closeButton = document.querySelector('.navigasi-sidebar-container img[alt="keluar"]');
+
+// Fungsi untuk membuka sidebar dan overlay
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.add('open'); // Tampilkan sidebar
+  overlay.style.display = 'block'; // Tampilkan overlay
+});
+
+// Fungsi untuk menutup sidebar dan overlay
+const hideOverlay = () => {
+  sidebar.classList.remove('open'); // Sembunyikan sidebar
+  overlay.style.display = 'none'; // Sembunyikan overlay
+};
+
+// Tambahkan event listener untuk tombol keluar dan overlay
+closeButton.addEventListener('click', hideOverlay);
+overlay.addEventListener('click', hideOverlay);
+
+
+function enableEdit() {
+  // Aktifkan semua input dan dropdown
+  const inputs = document.querySelectorAll("#input-small, #profilePicInput");
+  inputs.forEach((input) => {
+    input.disabled = false;
+  });
+
+  // Sembunyikan tombol "Sunting" dan "Keluar"
+  document.getElementById("editButton").classList.add("hidden");
+  document.getElementById("logoutButton").classList.add("hidden");
+
+  // Tampilkan tombol "Simpan"
+  document.getElementById("saveButton").classList.remove("hidden");
 }
 
-function hideOverlay() {
-  const profileMenu = document.querySelector('.profile-menu');
-  const overlay = document.getElementById('overlay');
+function saveChanges() {
+  // Nonaktifkan kembali semua input
+  const inputs = document.querySelectorAll("#input-small, #profilePicInput");
+  inputs.forEach((input) => {
+    input.disabled = true;
+  });
 
-  profileMenu.style.display = 'none';
-  overlay.style.display = 'none';
+  // Tampilkan kembali tombol "Sunting" dan "Keluar"
+  document.getElementById("editButton").classList.remove("hidden");
+  document.getElementById("logoutButton").classList.remove("hidden");
+
+  // Sembunyikan tombol "Simpan"
+  document.getElementById("saveButton").classList.add("hidden");
+}
+
+function updateProfilePicture(event) {
+  const input = event.target;
+  const file = input.files[0];
+
+  if (file) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      // Perbarui gambar profil dengan URL gambar yang diunggah
+      document.getElementById("profilePic").src = e.target.result;
+    };
+
+    reader.readAsDataURL(file);
+  }
 }

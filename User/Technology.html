@@ -5,93 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baca Rek</title>
     <link rel="stylesheet" href="/css_reset.css" />
-    <link rel="stylesheet" href="/Kategori.css" />
+    <link rel="stylesheet" href="/User/Kategori.css" />
   </head>
   <body>
     <div id="overlay" onclick="hideOverlay()"></div>
     <header>
-      <!-- Header Atas -->
-      <div class="header-top">
-        <div class="logo">
-          <img src="/assets/Logo and Text Black.png" alt="" />
+      <div class="header-atas">
+        <img src="/assets/Logo and Text Black.png" alt="logo" class="logo" />
+        <div class="picture-container">
+          <a href="/Profile.html"
+            ><img src="/assets/Ellipse 5.png" alt="picture" class="profile-picture"
+          /></a>
         </div>
-        <div class="profile" onclick="toggleProfileMenu()">
-          <img
-            src="/assets/Ellipse 5.png"
-            alt="Profile Picture"
-            class="profile-pic"
-          />
-        </div>
-      </div>
-      <!-- Header Atas android -->
-      <div class="header-top-smartphone">
-        <div class="logo">
-          <img src="/assets/Logo and Text Black.png" alt="" />
-        </div>
-        <div class="profile" onclick="toggleProfileMenu()">
-          <img src="/assets/Menu.png" alt="Profile Picture" class="" />
-        </div>
+        <img src="/assets/Menu.png" class="menu-toggle" alt="menu" />
       </div>
 
-      <!-- Menu Profile (Dekstop dan Mobile) -->
-      <div class="profile-menu">
-        <div class="profile-info">
-          <div class="menu-profile">
-            <img
+      <nav class="navigasi-container">
+        <a href="/User/Home.html">Beranda</a>
+        <a href="/User/National.html">Nasional</a>
+        <a href="/User/International.html">Internasional</a>
+        <a href="/User/Economy.html">Ekonomi</a>
+        <a href="/User/Sports.html">Olahraga</a>
+        <a href="/User/Technology.html">Teknologi</a>
+        <a href="/User/Automotive.html">Otomotif</a>
+        <a href="/User/Entertainment.html">Hiburan</a>
+        <input type="text" placeholder="Search..." />
+      </nav>
+
+      <nav class="navigasi-sidebar-container">
+        <div class="sidebar-header">
+          <a href="/Profile.html"
+            ><img
               src="/assets/Ellipse 5.png"
-              alt="Profile Picture"
-              class="profile-pic-large"
-            />
-            <img
-              src="/assets/Exit.png"
-              alt=""
-              class="exit-button"
-              onclick="toggleProfileMenu()"
-            />
-          </div>
-          <div class="profile-name">Galvin</div>
-          <div class="profile-role">Role: Writer</div>
-          <a href="/WritingSection.html"
-            ><button class="btn-write">Write</button></a
-          >
-          <input type="text" placeholder="Search" class="search-input" />
+              alt="profile picture"
+              class="sidebar-profile-picture"
+          /></a>
+          <img src="/assets/Exit.png" alt="keluar" />
         </div>
-
-        <div class="linebar"></div>
-        <nav class="navbar">
-          <a href="/Home.html">Home</a>
-          <a href="/National.html">National</a>
-          <a href="/International.html">International</a>
-          <a href="/Economy.html">Economy</a>
-          <a href="/Sports.html">Sports</a>
-          <a href="/Technology.html">Technology</a>
-          <a href="/Automotive.html">Automotive</a>
-          <a href="/Entertainment.html">Entertainment</a>
-        </nav>
-        <div class="profile-info">
-          <button class="btn-logout">Log Out</button>
-        </div>
-      </div>
-
-      <!-- Header Bawah Dekstop -->
-      <div class="header-bottom">
-        <nav class="navbar-desktop">
-          <a href="/Home.html">Home</a>
-          <a href="/National.html">National</a>
-          <a href="/International.html">International</a>
-          <a href="/Economy.html">Economy</a>
-          <a href="/Sports.html">Sports</a>
-          <a href="/Technology.html">Technology</a>
-          <a href="/Automotive.html">Automotive</a>
-          <a href="/Entertainment.html">Entertainment</a>
-        </nav>
-        <input type="text" placeholder="Search" class="searchbar-desktop" />
-      </div>
+        <div class="profile-name">Galvin</div>
+        <div class="profile-role">Peran: Pembaca</div>
+        <input type="text" placeholder="Search..." />
+        <a href="/User/Home.html">Beranda</a>
+        <a href="/User/National.html">Nasional</a>
+        <a href="/User/International.html">Internasional</a>
+        <a href="/User/Economy.html">Ekonomi</a>
+        <a href="/User/Sports.html">Olahraga</a>
+        <a href="/User/Technology.html">Teknologi</a>
+        <a href="/User/Automotive.html">Otomotif</a>
+        <a href="/User/Entertainment.html">Hiburan</a>
+        <button id="button">Keluar</button>
+      </nav>
     </header>
 
     <main>
       <a href="#">
-        <h1 class="title" id="title-theme">Cars</h1>
+        <h1 class="title" id="title-theme">Information Technology</h1>
       </a>
       <a href="#">
         <h1 class="title">Most Popular</h1>
@@ -247,26 +215,7 @@
       <div class="footer-container">
         <div class="connection-container">
           <div class="logo-text">
-            <img src="assets/Logo and Text White.png" alt="Logo" />
-          </div>
-          <div>
-            <a href="">
-              <h1>Connect With Us</h1>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="assets/Frame 27.png" alt="instagram" />
-            </a>
-            <a href="#">
-              <img src="assets/Frame 28.png" alt="Facebook" />
-            </a>
-            <a href="#">
-              <img src="assets/Frame 29.png" alt="Twetter" />
-            </a>
-            <a href="#">
-              <img src="assets/Frame 30.png" alt="Youtube" />
-            </a>
+            <img src="/assets/Logo and Text White.png" alt="Logo" />
           </div>
           <div>
             <p>&copy; 2024 - All rights reserved</p>
@@ -274,15 +223,15 @@
         </div>
         <div class="information-container">
           <div>
-            <h1>What is Baca Rek?</h1>
+            <h1>Apa Itu Baca Rek?</h1>
           </div>
           <div>
             <p>
-              BacaRek is one of online websites which provides you a bunch of
-              information regarding what you need, containing national,
-              international, economy, sports, technology, automotive and
-              entertainment news, and obviously free. To fill the readers needs
-              in comfort, we don’t have any advertisement.
+              BacaRek adalah salah satu situs online yang memberikan Anda banyak
+              informasi mengenaiapa yang anda butuhkan, berisi nasional,
+              internasional, ekonomi, olah raga, teknologi, otomotif dan berita
+              hiburan, dan tentu saja gratis. Untuk memenuhi kebutuhan pembaca
+              dalam bidang kenyamanan, kami tidak menampilkan iklan apa pun.
             </p>
           </div>
         </div>
