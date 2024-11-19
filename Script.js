@@ -1,3 +1,4 @@
+// ---------------------- header------------------------
 // Ambil elemen-elemen yang diperlukan
 const menuToggle = document.querySelector('.menu-toggle');
 const sidebar = document.querySelector('.navigasi-sidebar-container');
@@ -21,6 +22,8 @@ closeButton.addEventListener('click', hideOverlay);
 overlay.addEventListener('click', hideOverlay);
 
 
+
+// -------------------------button profile-------------------------
 function enableEdit() {
   // Aktifkan semua input dan dropdown
   const inputs = document.querySelectorAll("#input-small, #profilePicInput");

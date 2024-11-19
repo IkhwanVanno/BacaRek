@@ -24,10 +24,12 @@
         <label for="">Judul</label>
       </div>
       <input id="input-small" type="text" />
+
       <div>
         <label for="">Tanggal</label>
       </div>
       <input id="input-small" type="date" />
+
       <div>
         <label for="">Kategori</label>
       </div>
@@ -35,15 +37,18 @@
         <option value=""></option>
         <option value=""></option>
       </select>
+
       <div>
         <label>Gambar</label>
       </div>
       <div class="file-input-wrapper">
-        <label for="file-input" class="file-input-label"
-          >Jatuhkan File anda di sini</label
-        >
-        <input type="file" id="file-input" class="file-input" />
+        <label for="file-input" class="file-input-label">
+          Jatuhkan File anda di sini
+        </label>
+        <input type="file" id="file-input" class="file-input" accept="image/*" />
+        <img id="preview-image" class="preview-image" alt="Preview" />
       </div>
+
       <div>
         <label for="">Teks</label>
       </div>
@@ -77,6 +82,6 @@
         </div>
       </div>
     </footer>
-    <script src="/Script.js"></script>
+    <script src="/UploadImg.js"></script>
   </body>
 </html>

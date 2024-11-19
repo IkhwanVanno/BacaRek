@@ -32,11 +32,8 @@ header {
 }
 /* --------------------Styling untuk Main------------------ */
 main {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
-  /* height: 100vh; */
-  padding: 5% 10%;
+  padding: 5% 10% 0 10%;
 }
 main div {
   margin-bottom: 1%;
@@ -47,7 +44,8 @@ main div {
 }
 #input-large {
   width: 100%;
-  height: 5rem;
+  height: 10rem;
+  overflow-y: scroll;
 }
 /* Styling for file input container */
 .file-input-wrapper {
@@ -56,20 +54,20 @@ main div {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 5rem;
+  height: 10rem;
   border: 1px solid #000000;
   border-radius: 2px;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
-/* Centered text inside the container */
 .file-input-label {
   font-size: 16px;
   color: #888;
-  pointer-events: none; /* Makes sure the label text is not clickable */
+  pointer-events: none;
+  text-align: center;
 }
 
-/* Hidden file input placed over the container */
 .file-input {
   position: absolute;
   top: 0;
@@ -77,20 +75,35 @@ main div {
   width: 100%;
   height: 100%;
   opacity: 0;
-  cursor: pointer; /* Changes cursor to indicate it's clickable */
+  cursor: pointer;
 }
+
+.preview-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
 main input,
 select,
 textarea,
 .file-input-wrapper,
 .upload {
-  margin-bottom: 4%;
+  margin-bottom: 4%;   
 }
 .upload {
   border-radius: 4px;
   width: 20%;
-  height: 2rem;
   background-color: var(--blue);
+  color: white;
+  border: none;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-small);
+  text-align: center;
 }
 .upload1 {
   border-radius: 4px;

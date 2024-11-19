@@ -32,7 +32,7 @@ header {
 }
 /* --------------------Styling untuk Main------------------ */
 main{
-  width: 100%;
+  width: 100vw;
   padding: 3%;
 }
 main h1, p, button, section{
@@ -64,6 +64,8 @@ main p{
   border: 1px solid black;
   border-radius: 7px;
   padding: 10px;
+  height: 20rem;
+  overflow-y: scroll;
 }
 .list-riwayat{
   display: flex;
